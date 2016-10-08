@@ -1,6 +1,6 @@
-var x = prompt("What Is The FIRST value you need to have calculated (radius for circles)");
+var x = prompt("What Is The FIRST value you need to have calculated (radius for circles, and min number for random number)");
 console.log(x);
-var o = prompt("The operation: add, subtract, multiply, divide, root (only square roots), exponent, circumference of circle, A of circle, A of sphere, natural log of 2, natural log of 10, E log 2, E log 10, arc cosine, absolute value, arc sine, arc tangent, arc tangent 2(as quotient of arguments), rounded up, rounded down, rounded(to nearest number), cosine, E^x, natural logarithm(of x), sine(of x), tangent(of x), random number(0 or 1)");
+var o = prompt("The operation: add, subtract, multiply, divide, root (only square roots), exponent, circumference of circle, A of circle, A of sphere, natural log of 2, natural log of 10, E log 2, E log 10, arc cosine, absolute value, arc sine, arc tangent, arc tangent 2(as quotient of arguments), rounded up, rounded down, rounded(to nearest number), cosine, E^x, Natural logarithm(of x (base E)), sine(of x), tangent(of x), random number(0 or 1)");
 console.log(o);
 
 /*
@@ -86,11 +86,31 @@ if (o == "add" || o == "subtract" || o == "multiply" || o == "divide" || o == "r
 	}
 	if (o == "rounded up") {
 		console.log(Math.ceil(x));
-		// the arc tangent if x is put on console logs
+		// the x is rounded up and is put on console logs
 	}
 	if (o == "rounded down") {
-		console.log(Math.ceil(x));
-		// the arc tangent if x is put on console logs
+		console.log(Math.floor(x));
+		// the x is rounded down and is put on console logs
+	}
+	if (o == "rounded") {
+		console.log(Math.round(x));
+		// the value of x is rounded, and is put on console logs
+	}
+	if (o == "cosine") {
+		console.log(Math.log(x));
+		// the value of xs cosine in radians is put on console logs
+	}
+	if (o == "E^x") {
+		console.log(Math.exp(x));
+		// the value of E^x is put on console logs
+	}
+	if (o == "Natural logarithm") {
+		console.log(Math.log(x));
+		// the value of x logged with E is put on console logs
+	}
+	if (o == "E^") {
+		console.log(Math.exp(x));
+		// the value of E^x is put on console logs
 	}
 } else {
 	alert("Use the actual operations said, (not in peranthesis)");
